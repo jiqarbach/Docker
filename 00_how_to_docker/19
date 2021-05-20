@@ -1,0 +1,5 @@
+docker run -d -it --name Abathur -p 3000:3000 -v /Users/jiqarbac/:/root python:2-slim
+docker exec Abathur apt update -y
+docker exec Abathur apt upgrade -y 
+docker exec Abathur pip install flask
+docker exec Abathur ./root/app/app.py
